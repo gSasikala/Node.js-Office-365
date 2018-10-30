@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>testAPI</Name>
+    <RootNamespace>testAPI</RootNamespace>
+    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>5d0dfb39-46ec-468d-a140-8adf12fb7d73</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="graph.js" />
+    <Compile Include="public\js\animate.js" />
+    <Compile Include="public\js\bootstrap.min.js" />
+    <Compile Include="public\js\custom.js" />
+    <Compile Include="public\js\jquery.viewbox.min.js" />
+    <Compile Include="routes\about.js" />
+    <Compile Include="routes\auth.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="routes\users.js" />
+    <Content Include=".env" />
+    <Content Include="package.json" />
+    <Content Include="public\css\animate.css" />
+    <Content Include="public\css\bootstrap.min.css" />
+    <Content Include="public\css\font-awesome.min.css" />
+    <Content Include="public\css\main.css" />
+    <Content Include="public\css\viewbox.css" />
+    <Content Include="public\images\about.jpg" />
+    <Content Include="public\images\annie-spratt-604126-unsplash.jpg" />
+    <Content Include="public\images\banner-customers.jpg" />
+    <Content Include="public\images\banner-team.jpg" />
+    <Content Include="public\images\banner.jpg" />
+    <Content Include="public\images\customer-1.jpg" />
+    <Content Include="public\images\customer-2.jpg" />
+    <Content Include="public\images\customer-3.jpg" />
+    <Content Include="public\images\customer-4.jpg" />
+    <Content Include="public\images\customer-5.jpg" />
+    <Content Include="public\images\customer-6.jpg" />
+    <Content Include="public\images\image-1.jpg" />
+    <Content Include="public\images\image-2.jpg" />
+    <Content Include="public\images\image-3.jpg" />
+    <Content Include="public\images\kyle-broad-29486-unsplash.jpg" />
+    <Content Include="public\images\logo-dmand.png" />
+    <Content Include="public\images\logo.png" />
+    <Content Include="public\images\Portfolio-1.jpg" />
+    <Content Include="public\images\Portfolio-2.jpg" />
+    <Content Include="public\images\Portfolio-3.jpg" />
+    <Content Include="public\images\Portfolio-4.jpg" />
+    <Content Include="public\images\Portfolio-5.jpg" />
+    <Content Include="public\images\Portfolio-6.jpg" />
+    <Content Include="public\images\Portfolio-7.jpg" />
+    <Content Include="public\images\Portfolio-8.jpg" />
+    <Content Include="public\images\psd-to-html.jpg" />
+    <Content Include="public\images\specialities.jpg" />
+    <Content Include="public\images\sutd-logo.png" />
+    <Content Include="public\images\team-1.jpg" />
+    <Content Include="public\images\team-2.jpg" />
+    <Content Include="public\images\team-3.jpg" />
+    <Content Include="public\images\team-4.jpg" />
+    <Content Include="public\images\Web Design.jpg" />
+    <Content Include="public\stylesheets\main.css" />
+    <Content Include="public\stylesheets\style.css" />
+    <Content Include="README.md" />
+    <Content Include="views\about.hbs" />
+    <Content Include="views\index.hbs" />
+    <Content Include="views\layout.hbs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\js\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="routes\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

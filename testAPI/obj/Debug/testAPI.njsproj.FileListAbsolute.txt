@@ -1,0 +1,2 @@
+C:\Users\sasikala\Documents\Workouts\testAPI\testAPI\obj\Debug\testAPI.njsproj.CoreCompileInputs.cache
+C:\Users\sasikala\Documents\Workouts\testAPI\testAPI\bin\Microsoft.NodejsTools.WebRole.dll
